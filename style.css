@@ -1,0 +1,68 @@
+html {
+    overflow-y: scroll;
+}
+body {
+    background-color: rgb(16, 22, 55);
+}
+#header {
+    height: 50px;
+    background-color: rgb(16, 22, 55);
+    color: rgb(188, 188, 188);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold; 
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid rgb(188, 188, 188);
+    padding-bottom: 10px;
+}
+#header_name {
+    font-size: 24px;
+}
+#header_links {
+    display: flex;
+    gap: 75px;
+}
+
+#home {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 300px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+#home_introtext {
+    font-weight: normal;
+    margin: 10px;
+    color: rgb(146, 146, 146);
+    margin-left: 0;
+}
+#home_nametext {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 5px;
+    margin-left: 0;
+}
+#home_bigtext {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 5px;
+    color: rgb(146, 146, 146);
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+.get_in_touch {
+    width: 140px;
+    height: 50px;
+    background-color:rgb(16, 22, 55);
+    color: rgb(241, 172, 11);
+    border: 1px solid rgb(241, 172, 11);
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
