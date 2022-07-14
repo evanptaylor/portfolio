@@ -1,8 +1,14 @@
 :root {
     --grey_theme: rgb(188, 188, 188);
-    --lgrey_theme: rgb(146, 146, 146);
-    --orange_theme: rgb(241, 172, 11);
+    --darkgrey_theme: rgb(146, 146, 146);
+    --orange_theme: rgb(11, 241, 176);
+    /*--orange_theme: rgb(241, 172, 11);
+    --button_hover_theme: rgb(241, 172, 11, 0.25);*/
+    --button_hover_theme: rgb(11, 241, 176, 0.25);
     --darkblue_theme: rgb(16, 22, 55);
+
+    --ff_main: Verdana, Geneva, Tahoma, sans-serif;
+    --ff_secondary: 'Andale Mono', AndaleMono, monospace;
 }
 html { 
     overflow-y: scroll;
@@ -10,8 +16,9 @@ html {
     scroll-snap-type: y mandatory;
 }
 body {
-    background-color: rgb(16, 22, 55);
+    background-color: var(--darkblue_theme);
     width: 100%;
+    height: 100%;
     margin: 0px;
 }
 a {
@@ -22,31 +29,35 @@ a:hover {
     color: var(--orange_theme);
 }
 button a:hover {
-    color:rgb(16, 22, 55);
-}
-button:hover {
-    background-color: var(--orange_theme);
     color: var(--darkblue_theme);
 }
+button:hover {
+    background-color: var(--button_hover_theme);
+    color: var(--darkblue_theme);
+}
+
 /*HEADER*/
 #header {
     height: 50px;
     background-color: var(--darkblue_theme);
     color: var(--grey_theme);
     /*font-family: Verdana, Geneva, Tahoma, sans-serif;*/
-    font-family: 'Andale Mono', AndaleMono, monospace;
+    font-family: var(--ff_secondary);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: bold; 
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 1px solid var(--grey_theme);
+    border-bottom: 1px solid var(--orange_theme);
     padding-bottom: 5px;
+    padding-top: 5px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 1400px;
+    /*width: 1400px;*/
+    width: 100%;
+    box-sizing: border-box;
 }
 #header_name {
     font-size: 24px;
@@ -56,12 +67,37 @@ button:hover {
     display: flex;
     gap: 75px;
 }
+#resume {
+    width: 80px;
+    height: 35px;
+    background-color: var(--darkblue_theme);
+    color: var(--orange_theme);
+    border: 1px solid var(--orange_theme);
+    border-radius: 5px;
+    font-family: var(--ff_secondary);
+}
+#resume a {
+    display: block;
+}
+#resume:hover {
+    background-color: var(--button_hover_theme);
+    color: var(--darkblue_theme);
+}
+#header_right {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
 /*HOME PAGE*/
 #home {
     color: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-left: 300px;
+    font-family: var(--ff_main);
+    /*padding-left: 300px;
     padding-top: 175px;
+    padding-left: 20rem;
+    padding-top: 10rem;*/
+    padding-left: 20%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
 }
@@ -83,7 +119,7 @@ button:hover {
     font-weight: bold;
     padding: 0px;
     margin: 5px;
-    color: var(--lgrey_theme);
+    color: var(--darkgrey_theme);
     margin-left: 0;
     margin-bottom: 30px;
 }
@@ -95,40 +131,40 @@ button:hover {
     border: 1px solid var(--orange_theme);
     border-radius: 5px;
     margin-top: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--ff_secondary);
 }
+.get_in_touch a, #resume a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*SECTION and SCROLL*/
-.sec_one {
+.sec_one, .sec_two, .sec_three, .sec_four {
     height: 100vh;
     scroll-snap-align: start;
     color: white;
     align-items: center;
 }
-.sec_two {
-    height: 100vh; 
-    scroll-snap-align: start;
-    color: white;
-    align-items: center;
-}
-.sec_three {
-    height: 100vh; 
-    scroll-snap-align: start;
-    color: white;
-    align-items: center;
-}
+
 /*PORTFOLIO*/
-#port {
+#port, #about, #contact {
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--ff_main);
     font-size: 40px;
     font-weight: bold;
     color: var(--grey_theme);
-    padding-left: 300px;
-    padding-top: 150px;
+    /*padding-left: 20rem;
+    padding-top: 10rem;*/
+    padding-left: 20%;
+    padding-top: 10%;
 
 }
-#port_text {
+#about_text, #port_text, #contact_text {
     font-size: 20px;
     font-weight: initial;
 }
