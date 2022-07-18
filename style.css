@@ -168,3 +168,40 @@ button:hover {
     font-size: 20px;
     font-weight: initial;
 }
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-timing-function: cubic-bezier(.22,.08,.42,.99);
+}
+  
+@keyframes slidein {
+    from {
+      margin-top: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-top: 10px;
+      width: 100%;
+    }
+}
+
+#header, #header_name, #resume, .get_in_touch {
+    animation-duration: 4s;
+    animation-name: fadein;
+    animation-timing-function: cubic-bezier(.22,.08,.42,.99);
+}
+  
+@keyframes fadein {
+    from {
+      color:rgb(16, 22, 55);
+      border-color:rgb(16, 22, 55)
+    }
+  
+    to {
+      color: var(--ff_secondary);
+      border-color: var(--orange_theme);
+    }
+}
+
