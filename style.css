@@ -169,6 +169,11 @@ button:hover {
     font-size: 20px;
     font-weight: initial;
 }
+#project_info {
+    color: var(--grey_theme);
+    font-size: 15px;
+    font-weight: initial;    
+}
 #about_text, #port_text, #contact_text {
     font-size: 20px;
     font-weight: initial;
