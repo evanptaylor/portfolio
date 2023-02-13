@@ -1,2 +1,2 @@
 # portfolio
-portfolio website for myself. Created first and foremost as a passion project, but also to show off web-design skills. 
+portfolio website to showcase projects and front-end design
