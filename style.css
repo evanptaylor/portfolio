@@ -1,9 +1,9 @@
 :root {
     --grey_theme: rgb(188, 188, 188);
     --darkgrey_theme: rgb(146, 146, 146);
-    --orange_theme: rgb(11, 241, 176);
-    /*--orange_theme: rgb(241, 172, 11);
-    --button_hover_theme: rgb(241, 172, 11, 0.25);*/
+    /*--orange_theme: rgb(11, 241, 176);*/
+    --orange_theme: rgb(241, 172, 11);
+    /*--button_hover_theme: rgb(241, 172, 11, 0.25);*/
     --button_hover_theme: rgb(11, 241, 176, 0.25);
     --darkblue_theme: rgb(16, 22, 55);
 
@@ -35,7 +35,10 @@ button:hover {
     background-color: var(--button_hover_theme);
     color: var(--darkblue_theme);
 }
-
+#evantaylorline {
+    color: var(--orange_theme);
+    display: contents;
+}
 /*HEADER*/
 #header {
     height: 50px;
@@ -164,7 +167,12 @@ button:hover {
     padding-top: 10%;
 
 }
+#port_line, #about_line, #contact_line {
+    color:whitesmoke;
+}
 #projects {
+    margin-top: -10px;
+    margin-bottom: -10px;
     color: var(--orange_theme);
     font-size: 20px;
     font-weight: initial;
@@ -172,7 +180,8 @@ button:hover {
 #project_info {
     color: var(--grey_theme);
     font-size: 15px;
-    font-weight: initial;    
+    font-weight: initial;
+    margin-bottom: 40px;  
 }
 #about_text, #port_text, #contact_text {
     font-size: 20px;
