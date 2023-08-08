@@ -169,6 +169,9 @@ button:hover {
     padding-top: 10%;
 
 }
+#port {
+    margin-right: 10%;
+}
 #port_line, #about_line, #contact_line {
     color:whitesmoke;
 }
